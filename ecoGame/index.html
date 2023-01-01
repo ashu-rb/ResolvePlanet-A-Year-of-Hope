@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Year Game</title>
+    <link rel="icon" type="image/png" sizes="128x128" href="/assets/img/favicon.ico" />
+
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="customize.css" type="text/css" />
+    <script src="cards.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="game-board">
+        <!-- <h1>
+        <strong>Hacker's attack Cards</strong> <br />
+        Choose the best card to stop the hackers' attack <br />
+      </h1> -->
+        <div class="title-h1">
+            <h1>
+
+                Choose the best card to keep our environment clean & healthy
+            </h1>
+        </div>
+        <div class="hacker-area">
+            <div class="stats hacker-stats">
+                <div class="life-bar">
+                    <div class="life-left hacker-color"></div>
+                </div>
+                <div class="life-total"></div>
+                <div class="thumbnail">
+                    <img src="images/1.png">
+                </div>
+                <div class="name">Activity</div>
+            </div>
+
+            <div class="card hacker-card hacker-color">
+                <div class="text"></div>
+                <div class="power"></div>
+            </div>
+        </div>
+
+        <div class="player-area">
+            <div class="stats player-stats">
+                <div class="life-bar">
+                    <div class="life-left player-color"></div>
+                </div>
+                <div class="life-total"></div>
+                <!-- Change the name and emoji here -->
+                <div class="thumbnail">
+                    <img src="images/2.png" />
+                </div>
+                <div class="name">You</div>
+            </div>
+
+            <div class="card player-card player-color">
+                <div class="text"></div>
+                <div class="power"></div>
+            </div>
+
+            <div class="card player-card player-color">
+                <div class="text"></div>
+                <div class="power"></div>
+            </div>
+
+            <div class="card player-card player-color">
+                <div class="text"></div>
+                <div class="power"></div>
+            </div>
+
+            <button class="start-game" onClick="startGame()">Play the Game!</button>
+            <button class="next-turn" onClick="playTurn()">Next!</button>
+        </div>
+    </div>
+
+    <div class="winner-section">
+        <div>
+            <span class="winner-message">You got trapped in unhealthy zone!</span>
+            <button class="restart" onClick="location.reload()">Play Again</button>
+            <button class="restart nft" onclick="window.open('https://nft-mint-indol.vercel.app/mint?imgURL=https://i.redd.it/mi8ro7d4ff9a1.png','_blank');" type="button">Claim Your NFT!</button>
+        </div>
+    </div>
+
+    <script src="scripts/script.js" type="text/javascript"></script>
+</body>
+
+</html>
